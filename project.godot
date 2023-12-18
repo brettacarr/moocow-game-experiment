@@ -12,6 +12,7 @@ config_version=4
 
 config/name="Moocow-game-experiment"
 run/main_scene="res://MooCowMain.tscn"
+boot_splash/image="res://art/cow-splash.png"
 config/icon="res://icon.png"
 
 [display]

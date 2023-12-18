@@ -6,34 +6,139 @@
 [node name="Fences" type="Node2D"]
 
 [node name="Fence-horizontal" parent="." instance=ExtResource( 1 )]
-position = Vector2( 646, 384 )
+position = Vector2( 415, 367 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Fence-horizontal2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 710, 384 )
+position = Vector2( 479, 367 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Fence-horizontal3" parent="." instance=ExtResource( 1 )]
-position = Vector2( 774, 384 )
+position = Vector2( 543, 367 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Fence-horizontal4" parent="." instance=ExtResource( 1 )]
-position = Vector2( 838, 384 )
+position = Vector2( 607, 367 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Fence-horizontal5" parent="." instance=ExtResource( 1 )]
-position = Vector2( 902, 384 )
+position = Vector2( 671, 367 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Fence-horizontal6" parent="." instance=ExtResource( 1 )]
-position = Vector2( 966, 384 )
+position = Vector2( 735, 367 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Fence-horizontal7" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1030, 384 )
+position = Vector2( 799, 367 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Fence-horizontal8" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1094, 384 )
+position = Vector2( 863, 367 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Fence-horizontal9" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1158, 384 )
+position = Vector2( 927, 367 )
+__meta__ = {
+"_edit_group_": true
+}
 
-[node name="Fence-vertical" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1191, 351 )
+[node name="Fence-vertical10" parent="." instance=ExtResource( 2 )]
+position = Vector2( 960, 302 )
+__meta__ = {
+"_edit_group_": true
+}
 
-[node name="Fence-vertical2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1191, 415 )
+[node name="Fence-vertical11" parent="." instance=ExtResource( 2 )]
+position = Vector2( 960, 366 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Fence-vertical12" parent="." instance=ExtResource( 2 )]
+position = Vector2( 960, 430 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Fence-vertical13" parent="." instance=ExtResource( 2 )]
+position = Vector2( 960, 494 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Fence-vertical14" parent="." instance=ExtResource( 2 )]
+position = Vector2( 960, 526 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Fence-vertical16" parent="." instance=ExtResource( 2 )]
+position = Vector2( 383, 46 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Fence-vertical17" parent="." instance=ExtResource( 2 )]
+position = Vector2( 383, 110 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Fence-vertical18" parent="." instance=ExtResource( 2 )]
+position = Vector2( 383, 174 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Fence-vertical19" parent="." instance=ExtResource( 2 )]
+position = Vector2( 383, 238 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Fence-vertical25" parent="." instance=ExtResource( 2 )]
+position = Vector2( 383, 270 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Fence-vertical26" parent="." instance=ExtResource( 2 )]
+position = Vector2( 383, 334 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Fence-vertical20" parent="." instance=ExtResource( 2 )]
+position = Vector2( 383, 398 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Fence-vertical21" parent="." instance=ExtResource( 2 )]
+position = Vector2( 383, 462 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Fence-vertical22" parent="." instance=ExtResource( 2 )]
+position = Vector2( 383, 526 )
+__meta__ = {
+"_edit_group_": true
+}
