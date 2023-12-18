@@ -18,8 +18,8 @@ animations = [ {
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
-radius = 34.0
-height = 98.0001
+radius = 30.0
+height = 70.0
 
 [node name="MooCow" type="KinematicBody2D"]
 position = Vector2( 295, 412 )

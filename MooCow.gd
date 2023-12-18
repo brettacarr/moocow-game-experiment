@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 
-export var speed = 200
+export var speed = 400
 var screen_size
 var velocity = Vector2()
 
@@ -38,9 +38,10 @@ func _physics_process(delta):
 	if (velocity.y != 0):
 		$AnimatedSprite.animation = "stand"
 	
-	position += velocity * delta
+#	position += velocity * delta
 	position.x = clamp(position.x, 32, screen_size.x-32)
 	position.y = clamp(position.y, 64, screen_size.y-64)
-	move_and_collide(velocity * delta)
+#	move_and_collide(velocity * delta)
+	move_and_slide(velocity)
 	
 	
