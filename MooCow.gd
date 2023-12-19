@@ -51,13 +51,11 @@ func _physics_process(delta):
 			var collider = collision.collider as RigidBody2D
 			if (collider.name == "Chainsaw"):
 				hasChainSaw = true
-				if collider != null:
-					collider.get_parent().remove_child(collider)
+				collider.queue_free()
 			if ("Fence" in collider.name && 
 				Input.is_action_just_pressed("ui_accept") && 
 				hasChainSaw):
-				if collider != null:
-					collider.get_parent().remove_child(collider)
+				collider.queue_free()
 			
 	
 
