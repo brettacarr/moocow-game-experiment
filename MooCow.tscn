@@ -1,8 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://art/Moocow2.png" type="Texture" id=1]
 [ext_resource path="res://MooCow.gd" type="Script" id=2]
 [ext_resource path="res://art/Moocow2-walking.png" type="Texture" id=3]
+[ext_resource path="res://art/Moocow2-chainsaw.png" type="Texture" id=4]
+[ext_resource path="res://art/Moocow2-walking-chainsaw.png" type="Texture" id=5]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -11,9 +13,19 @@ animations = [ {
 "name": "stand",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "stand-chainsaw",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 3 ) ],
 "loop": true,
 "name": "walk",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "walk-chainsaw",
 "speed": 5.0
 } ]
 
@@ -29,7 +41,7 @@ script = ExtResource( 2 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.8, 0.8 )
 frames = SubResource( 1 )
-animation = "walk"
+animation = "stand"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 z_index = 1

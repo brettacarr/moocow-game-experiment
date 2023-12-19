@@ -36,10 +36,10 @@ func _physics_process(delta):
 		$AnimatedSprite.stop()
 		
 	if (velocity.x != 0):
-		$AnimatedSprite.animation = "walk"
+		$AnimatedSprite.animation = "walk-chainsaw" if hasChainSaw else "walk"
 		$AnimatedSprite.flip_h = velocity.x > 0
 	if (velocity.y != 0):
-		$AnimatedSprite.animation = "stand"
+		$AnimatedSprite.animation = "stand-chainsaw" if hasChainSaw else "stand"
 	
 #	position += velocity * delta
 	position.x = clamp(position.x, 32, screen_size.x-32)
