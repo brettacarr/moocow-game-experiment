@@ -1,9 +1,11 @@
 extends KinematicBody2D
 
+signal hitFence
 
 export var speed = 400
 var screen_size
 var velocity = Vector2()
+var hasChainSaw = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -23,6 +25,7 @@ func get_input():
 		velocity.y -= 1
 	velocity = velocity.normalized() * speed
 	
+	
 func _physics_process(delta):
 	get_input()
 	
@@ -41,7 +44,20 @@ func _physics_process(delta):
 #	position += velocity * delta
 	position.x = clamp(position.x, 32, screen_size.x-32)
 	position.y = clamp(position.y, 64, screen_size.y-64)
-#	move_and_collide(velocity * delta)
+
 	move_and_slide(velocity)
+	for i in get_slide_count():
+			var collision = get_slide_collision(i)
+			var collider = collision.collider as RigidBody2D
+			if (collider.name == "Chainsaw"):
+				hasChainSaw = true
+				if collider != null:
+					collider.get_parent().remove_child(collider)
+			if ("Fence" in collider.name && 
+				Input.is_action_just_pressed("ui_accept") && 
+				hasChainSaw):
+				if collider != null:
+					collider.get_parent().remove_child(collider)
+			
 	
-	
+
